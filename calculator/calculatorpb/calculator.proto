@@ -49,9 +49,9 @@ service CalculatorService {
 
 	rpc PrimeNumberDecomposition(PrimeNumberDecompositionRequest) returns (stream PrimeNumberDecompositionResponse) {};
 
-	rpc ComputeAverage(ComputeAverageRequest) returns (ComputeAverageResponse) {};
+	rpc ComputeAverage(stream ComputeAverageRequest) returns (ComputeAverageResponse) {};
 
-	rpc FindMaximum(FindMaximumRequest) returns (stream FindMaximumResponse) {};
+	rpc FindMaximum(stream FindMaximumRequest) returns (stream FindMaximumResponse) {};
 
 	rpc SquareRoot(SquareRootRequest) returns (SquareRootResponse) {};
 }
